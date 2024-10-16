@@ -1,2 +1,4 @@
 # deep-learning-challenge
 Module 21 Challenge
+Analysis:
+The purpose of this analysis is to create a tool that can select applicants for funding with the best chance of success if they were to be funded by Alphabet Soup. The variable that is the target for the model is the "IS_SUCCESSFUL" column. The features are the rest of the columns, except for the "EIN" and "NAME" columns which were removed. The original code had two layers with 80 and 30 neurons and I had used relu and sigmoid. When I was optimizing the model, I had used an extra layer. I was not able to get the 75% accuracy even after the optimizations, however I was able to get close to it. I had added more layers and removed some columns to try to get the 75% accuracy, however it was not working. A different model I found that might solve this problem would be XGBoost since it can handle numerical and categorical features more effectively.
